@@ -1,0 +1,30 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#add-item-container {
+  width: 100vw;
+  height: 10.5vh;
+  background: grey;
+}
+
+#add-item-input {
+  width: 78vw;
+  height: 3vh;
+  font-size: 2vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+
+#add-item-submit {
+  float: right;
+  background: lightgrey;
+  border: 0px;
+  width: 17vw;
+  height: 10.5vh;
+  font-size: 2vw;
+  padding: 1vw;
+  margin: 0;
+}

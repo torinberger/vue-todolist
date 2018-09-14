@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="general.css">
     <script src="https://unpkg.com/vue"></script>
     <script src="index.js"></script>
     <title>Todo List</title>
@@ -26,7 +27,8 @@
         <ul>
           <todo-item v-for="item in todoList"
                      v-bind:key="item.id"
-                     v-bind:title="item.title">
+                     v-bind:title="item.title"
+                     v-if="item.title != ''">
           </todo-item>
         </ul>
       </div>
