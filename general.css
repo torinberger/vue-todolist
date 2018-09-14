@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 10.5vh;
   background: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
 #add-item-input {
@@ -27,4 +28,24 @@ body {
   font-size: 2vw;
   padding: 1vw;
   margin: 0;
+}
+
+#todo-list-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  width: 90vw;
+  margin: 5vw;
+  margin-left: 4vw;
+  margin-bottom: 0vw;
+  height: 4vh;
+  padding-left: 1vw;
+  background: lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
