@@ -8,13 +8,28 @@
   </head>
   <body>
     <div id="app">
-      <ul>
-        <todo-item v-for="item in todoList"
-                   v-bind:key="item.id"
-                   v-bind:title="item.title">
+      <div id="add-item-container">
+        <input
+          type="text"
+          id="add-item-input"
+          v-model="addItemTitle"
+          @keyup.enter="addItem()">
 
-        </todo-item>
-      </ul>
+        <button
+          v-on:click="addItem()"
+          id="add-item-submit">
+        Add</button>
+
+      </div>
+
+      <div id="todo-list-container">
+        <ul>
+          <todo-item v-for="item in todoList"
+                     v-bind:key="item.id"
+                     v-bind:title="item.title">
+          </todo-item>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

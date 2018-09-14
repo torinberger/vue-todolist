@@ -11,10 +11,15 @@ window.onload = function () {
   const vm = new Vue({
     el: '#app',
     data: {
-      todoList: [
-        {id: 0, title: "do stuff"},
-        {id: 1, title: "do more"}
-      ]
+      addItemTitle: "",
+      todoList: []
+    },
+    methods: {
+      addItem: function () {
+        this.todoList.push({id: this.todoList.length, title: this.addItemTitle});
+
+        this.addItemTitle = '';
+      }
     }
   });
 
