@@ -16,9 +16,11 @@ window.onload = function () {
     },
     methods: {
       addItem: function () {
-        this.todoList.push({id: this.todoList.length, title: this.addItemTitle});
+        if(this.addItemTitle) {
+          this.todoList.push({id: this.todoList.length, title: this.addItemTitle});
 
-        this.addItemTitle = '';
+          this.addItemTitle = '';
+        }
       }
     }
   });

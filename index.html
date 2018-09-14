@@ -27,8 +27,7 @@
         <ul>
           <todo-item v-for="item in todoList"
                      v-bind:key="item.id"
-                     v-bind:title="item.title"
-                     v-if="item.title != ''">
+                     v-bind:title="item.title">
           </todo-item>
         </ul>
       </div>
