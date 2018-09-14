@@ -25,9 +25,12 @@
 
       <div id="todo-list-container">
         <ul>
-          <todo-item v-for="item in todoList"
-                     v-bind:key="item.id"
-                     v-bind:title="item.title">
+          <todo-item
+            v-for="item in todoList"
+            v-bind:key="item.id"
+            v-bind:remove="removeItem"
+            v-bind:id="item.id"
+            v-bind:title="item.title">
           </todo-item>
         </ul>
       </div>
