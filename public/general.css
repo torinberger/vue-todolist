@@ -13,17 +13,19 @@ body {
 
 #add-item-input {
   width: 78vw;
-  height: 3vh;
-  font-size: 2vw;
+  height: calc(10.5vh - 2vw);
   padding: 1vw;
-  margin: 1vw;
+  border: 0;
+  margin: 0;
+  font-size: 2vw;
 }
 
 #add-item-submit {
   float: right;
-  background: lightgrey;
+  background: #1e90ff;
+  color: white;
   border: 0px;
-  width: 17vw;
+  width: 20vw;
   height: 10.5vh;
   font-size: 2vw;
   padding: 1vw;
@@ -41,7 +43,8 @@ li {
   font-size: 1.5vw;
   font-family: sans-serif;
   width: 90vw;
-  margin: 5vw;
+  margin: 2vw;
+  border-radius: 2px;
   margin-left: 4vw;
   margin-bottom: 0vw;
   height: 4vh;
